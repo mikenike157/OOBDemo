@@ -1,0 +1,10 @@
+
+public class VehicleController {
+	
+	public static void accelerateVehicles(Vehicle[] vehicleList) {
+		for (int i = 0; i < vehicleList.length; i++) {
+			vehicleList[i].increaseSpeed(10);
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class Bicycle extends Vehicle{
+	boolean isMountainBike;
+	
+	public Bicycle(boolean isMountainBike) {
+		super(2, 0, "Blue");
+		this.isMountainBike = isMountainBike;
+	}
+	
+}

@@ -1,0 +1,27 @@
+public class Vehicle {
+	int numWheels;
+	double speed;
+	String color;
+	
+	public Vehicle(int numWheels, double speed, String color) {
+		this.numWheels = numWheels;
+		this.speed = speed;
+		this.color = color;
+	}
+	
+	public double increaseSpeed(double newSpeed) {
+		if (speed + newSpeed > 0) {
+			speed += newSpeed;
+			return speed;
+		}
+		else {
+			speed = 0;
+			return speed;
+		}
+	}
+	
+	public void staticDemo() {
+		System.out.println(VehicleController.staticNum);
+	}
+	
+}

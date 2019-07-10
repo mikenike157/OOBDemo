@@ -1,0 +1,10 @@
+
+public class Car extends Vehicle{
+	int numDoors;
+	public Car() {
+		numWheels = 4;
+		color = "Black";
+		speed = 40.00;
+		numDoors = 4;
+	}
+}

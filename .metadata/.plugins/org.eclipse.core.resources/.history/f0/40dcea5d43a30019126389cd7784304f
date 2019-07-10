@@ -1,0 +1,27 @@
+public class Vehicle {
+	int numWheels;
+	double speed;
+	String color;
+	
+	public Vehicle() {
+		numWheels = 4;
+		speed = 0;
+		color = "Blue";
+	}
+	
+	public double increaseSpeed(double newSpeed) {
+		if (speed + newSpeed > 0) {
+			speed += newSpeed;
+			return speed;
+		}
+		else {
+			speed = 0;
+			return speed;
+		}
+	}
+	
+	public static void demoStatic() {
+		System.out.println("This is a demo of static");
+	}
+	
+}

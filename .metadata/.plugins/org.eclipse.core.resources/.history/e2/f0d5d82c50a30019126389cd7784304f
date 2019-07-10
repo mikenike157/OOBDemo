@@ -1,0 +1,14 @@
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		
+		
+		Vehicle unknownVehicle = new Vehicle(1, 0, "white");
+		
+		Car newCar = new Car();
+		System.out.println(newCar.color);
+		System.out.println(newCar.speed);
+		System.out.println(newCar.color);
+		System.out.println(newCar.numDoors);
+	}
+}

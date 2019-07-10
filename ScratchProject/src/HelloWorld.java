@@ -1,0 +1,34 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+//		Vehicle newVehicle = new Vehicle(4, 0, "red");
+//		System.out.println(newVehicle.color + " " + newVehicle.speed + " " + newVehicle.numWheels);
+//
+//		System.out.println(VehicleController.staticNum);
+//		VehicleController.staticNum = 10;
+//		newVehicle.staticDemo();
+
+		
+		Vehicle[] vehicleList = new Vehicle[3];
+		Vehicle bike = new Bicycle(true);
+		Car sedan = new Car();
+		Vehicle newVehicle = new Vehicle(7, 0, "pink");
+				
+		vehicleList[0] = bike;
+		vehicleList[1] = sedan;
+		vehicleList[2] = newVehicle;
+		
+		for (int i = 0; i < vehicleList.length; i++) {
+			System.out.println(vehicleList[i].speed);
+		}
+		
+		VehicleController.accelerateVehicles(vehicleList);
+		
+		for (int i = 0; i < vehicleList.length; i++) {
+			System.out.println(vehicleList[i].speed);
+		}
+	}
+	
+}

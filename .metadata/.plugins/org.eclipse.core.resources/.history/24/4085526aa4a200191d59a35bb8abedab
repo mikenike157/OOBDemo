@@ -1,0 +1,16 @@
+public class Vehicle {
+	int numWheels;
+	double speed;
+	String color;
+	
+	public double increaseSpeed(double newSpeed) {
+		if (speed + newSpeed > 0) {
+			speed += newSpeed;
+			return speed;
+		}
+		else {
+			speed = 0;
+			return speed;
+		}
+	}
+}

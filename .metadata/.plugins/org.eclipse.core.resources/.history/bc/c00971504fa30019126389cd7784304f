@@ -1,0 +1,8 @@
+
+public class Car extends Vehicle{
+	int numDoors;
+	public Car() {
+		super(4, 30.00, "Black");
+		numDoors = 4;
+	}
+}
